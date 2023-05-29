@@ -9,7 +9,7 @@ const addComments=async()=>{
     const result=await fetch(`/api/articles/${articleName}/add-comments`,{
         method: 'post',
         body:JSON.stringify({username, text: commentText}),
-        headers:{
+        headers: {
             "Content-Type": "application/json",
         },
         
